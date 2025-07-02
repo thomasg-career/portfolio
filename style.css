@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #eee;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #161616;
+  border-bottom: 1px solid #222;
+}
+
+nav h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #eee;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #5c7cfa;
+}
+
+nav a.active::after,
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #5c7cfa;
+  border-radius: 1px;
+}
+
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #5c7cfa;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border-left: 2px solid #444;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #5c7cfa;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #111;
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.timeline-content {
+  background: #1a1a1a;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  background-color: #222;
+}
+
+.timeline-content img {
+  background: transparent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.timeline-content a {
+  color: #5c7cfa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.timeline-content a:hover {
+  color: #aabfff;
+}
+
+.social-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #5c7cfa;
+}
+
+.social-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.social-card {
+  background-color: #1a1a1a;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.social-card.github:hover {
+  background-color: #333;
+  color: white;
+}
+
+.social-card.instagram:hover {
+  background-color: #e1306c;
+  color: white;
+}
+
+.social-card.linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.social-card.gmail:hover {
+  background-color: #d93025;
+  color: white;
+}
+
+.social-card:hover i {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #222;
+  user-select: none;
+  margin-top: 4rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Reset and Responsive Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Flex Layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons and Links */
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 10px;
+  }
+}
+body {
+  background-color: #000;   /* Black background */
+  color: #fff;              /* White text */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+

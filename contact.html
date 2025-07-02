@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Thomas George</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      color: #eee;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #5c7cfa;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      background: #222;
+      color: #eee;
+      resize: vertical;
+      transition: background-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      background: #2f2f2f;
+      border: 1px solid #5c7cfa;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    button[type="submit"] {
+      background: #5c7cfa;
+      color: #fff;
+      font-weight: 700;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background: #4056f4;
+    }
+    .intro-text {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+    .map-container {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Thomas George</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="socials.html">Socials</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Me</h2>
+    <form action="mailto:thomasg.career@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="intro-text">
+      <p>I'm from Chalakudy, a beautiful town in Kerala known for its lush greenery, scenic waterfalls, and rich cultural heritage. Chalakudy is famous for the majestic Athirappilly Falls and serves as a gateway to exploring the Western Ghats. It’s a place that inspires creativity and innovation, just like me!</p>
+    </div>
+
+    <div class="map-container" aria-label="Google Maps location of Chalakudy">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.232962309378!2d76.39371967534919!3d10.28133079280544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba81db59f07e6f9%3A0xd1a6c3a442ed11cf!2sChalakudy%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sus!4v1688363269886!5m2!1sen!2sus" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing Chalakudy location"
+      ></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Thomas George</p>
+  </footer>
+</body>
+</html>
